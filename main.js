@@ -9,4 +9,6 @@ addXpButton.addEventListener("click", () => {
         xp -= level;
         level++;
     }
+    currentLevelText.textContent = level;
+    xpProgressText.textContent = `${xp}/${level};`;
 });
